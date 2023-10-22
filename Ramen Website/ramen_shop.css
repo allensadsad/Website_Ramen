@@ -1,0 +1,604 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+body{
+    margin: auto;
+    height: auto;
+    width: auto;
+    font-family: 'Inter', sans-serif, 'Rock Salt', 'Lora', 'Mate';
+    background-color: white;
+    background-image: linear-gradient(to right,white, #c6c5c5, #989898);
+    box-sizing: border-box;
+}
+
+
+
+
+section.MainPage{
+    width: 100%;
+    height: 120vh;
+}
+
+/* Eto ung para sa pag adjust ng mismong logo */
+.logo{
+    margin-top: 40px;
+    height: 120px;
+    width: 363px;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+
+/* Adjust lahat sa loob ng nav (including logo, list, menubar, etc) */
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+}
+
+/* eto ung pag adjust/edit sa lahat ng list */
+nav ul li{
+    background-color: #2A2A2A;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* class ng ul tas include din dito pag adjust ng li */
+.navList li{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    font-size: large ;
+    font-family: 'Inter';
+
+}
+
+
+/* adjust ng ul */
+.navList{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 0;
+}
+
+/* adjust ng li */
+.navItem{
+    list-style: none;
+    margin: 1rem;
+}
+/* adjust ng loob ng li which is ung value niya */
+.navItem a{
+    color: white;
+    text-decoration: none;
+}
+
+/* current item */
+.navItem.current{
+    color: white;
+    cursor: default;
+    background-color: #DF8C00;
+}
+
+.navItem:hover:not(.navItem.current){
+    transform: scale(1.1) translateX(-5px);
+}
+
+.navItem a:hover:not(.navItem.current){
+    color: #DF8C00;
+}
+
+
+.menu{
+    display:flex;
+    float: right;
+    height: 40px;
+    width: 50px;
+    margin-top: -20px;
+    margin-right: 60px;
+}
+
+
+div.box{
+    position: relative;
+    background-color: #282828;
+    margin-top: 80px;
+    width: 720px;
+    height: 500px;
+    float: right;
+}
+
+.Photo{
+    
+    position: relative;
+   align-items: center;
+   width: 480px;
+   height: 480px;
+   margin-top: 5px; 
+   margin-left: 30px;
+   border-radius: 10px;
+}
+
+.container1{
+    position: relative;
+}
+.Photo1{
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 110px;
+    margin-left: 770px;
+    width: 480px;
+    height: 480px;
+}
+.Photo2{
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 130px;
+    margin-left: 700px;
+    width: 480px;
+    height: 480px;
+}
+
+.Font_Style{
+    /* Font Coordinates*/
+    margin-top: 200px;
+    margin-left: 100px;
+
+    /* Font Style */
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Inter';
+    text-shadow: #616161 1px 2px 8px;
+}
+
+.Font_Style1{
+    margin-left: 5px;
+    color: #B19100;
+    font-family: 'Rock Salt';
+    text-shadow: #000000 1px 1px 1px;
+}
+
+.Font_Style2{
+    /* Font Coordinates */
+    margin-top: 30px;
+    margin-left: 140px;
+
+    /* Font Style */
+    color: #B30000;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 96px;
+    font-family: 'Lora';
+    text-shadow: #6a6a6a 1px 2px 3px;
+}
+
+.Font_Style3{
+    /* Font Coordinates */
+    margin-top: 10px;
+    margin-left: 200px;
+    
+    /* Font Style */
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 100;
+    font-size: 60px;
+    font-family: 'Lora';
+    text-shadow: #616161 1px 2px 8px;
+}
+
+.Order{
+    /* For Block */
+    display: inline-block;
+    height: 30px;
+
+    /* For Text inside the box */
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+
+    /* Font Coordinates */
+    margin-left: 150px;
+    margin-top: 15px;
+
+    /* Font Style */
+    color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #DF8C00;
+
+    /* Cursor */
+    cursor: pointer;
+}
+
+.Order a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Order:hover:not(.navItem.current){
+    transform: scale(1.1) translateX(-5px);
+}
+
+.Order:hover:not(.navItem.current){
+    color: #DF8C00;
+    background-color: #000000;
+}
+.Order a:hover:not(.navItem.current){
+    color: #DF8C00;
+}
+
+.Order1{
+    padding-left: 5px;
+
+    /* Font Style*/
+    font-family: 'Lora';
+    font-size: 20px;
+}
+
+.Order2{
+    /* Font Coordinates*/
+    padding-left: 5px;
+
+    /* Font Style*/
+    color: #DF8C00;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+
+
+/* 2nd Page */
+
+
+section.Page2{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(to right,#b6b6b6, #ffffff, #878787);
+}
+
+.container2{
+    display: flex;
+    position: relative;
+}
+div.box2{
+    position:relative;
+    background-color: #282828;
+    width: 350px;
+    height: 470px;
+    margin-left: 180px;
+}
+
+.image1{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.container2 .image1{
+    margin-left: 165px;
+    margin-top: 75px;
+
+}
+
+.Heading{
+    /* Font Coordinates */
+    margin-top: 50px;
+    margin-left: 300px;
+    
+    /* Font Style*/
+    font-weight:500;
+    font-family: 'Inter';
+    font-size: 36px;
+    text-shadow: #000000 2px 2px 5px;
+
+}
+
+.Heading1{
+    /* Font Style*/
+    color: #e9be00;
+    padding-left: 1rem;
+    font-size: 30px;
+    font-family: 'Rock Salt';
+}
+
+.H{
+    /* Font Coordinates */
+    margin-top: 130px;
+    margin-left: -250px;
+
+    /* Font Style */
+    color: #B30000;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 70px;
+    font-family: 'Lora';
+    text-shadow: #6f6f6f 1px 1px 3px;
+}
+
+.H1{
+    /* Font Coordinates */
+    margin-top: 220px;
+    margin-left: -220px;
+
+    /* Font Style */
+    color: #000000;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 44px;
+    font-family: 'Lora';
+    text-shadow: #707070 2px 2px 5px;
+}
+
+
+.order a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.order{
+    position: absolute;
+    width: 109px;
+    height: 30px;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 17px;
+    background-color: #DF8C00;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-left: -40px;
+    text-align: center;
+    margin-top: 240px;
+}
+
+.order:hover:not(.navItem.current){
+    transform: scale(1.1) translateX(-5px);
+}
+
+.order:hover:not(.navItem.current){
+    color: #DF8C00;
+    background-color: #000000;
+}
+.order a:hover:not(.navItem.current){
+    color: #DF8C00;
+}
+
+.P1{
+    /* For Block */
+    display: block;
+    background-image: linear-gradient(to left,#989898, #c6c5c5, rgb(235, 235, 235));
+    padding: 10px;
+    /* Font Coordinates */
+    text-indent: 1rem;
+    margin-top: 350px;
+    margin-left: -360px;
+
+    /* Font Style */
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    text-align: justify;
+}
+
+
+
+/* 3 boxes */
+.container3{
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+
+.box3{
+    display: inline-block;
+    background-color: #282828;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+/* 3 images */
+
+.image2{
+    top: -20px;
+    left: -220px;
+    object-fit: cover;
+    z-index: 1;
+    position:relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;   
+}
+
+.SHIO{
+    /* Font Coordinates */
+    z-index: 1;
+    position: relative;
+    margin-top: -100px;
+    margin-left: -150px;
+
+    
+    /* Font Style */
+    color: #B30000;
+    text-align: center;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.SHIO1{
+    /* Font Coordinates */
+    z-index: 1;
+    position: relative;
+
+    /* Font Style */
+    color: #ffffff;
+    font-family: 'Mate';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.KOTSU{
+    /* Font Coordinates */
+    z-index: 1;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 390px;
+
+    /* Font Style */
+    color: #B30000;
+    text-align: center;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 35px;
+
+}
+
+.KOTSU1{
+    /* Font Coordinates */
+    z-index: 1;
+    position: relative;
+    margin-left: 100px;
+
+    /* Font Style */
+    color: #ffffff;
+    font-family: 'Mate';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.MISO{
+    /* Font Coordinates */
+    z-index: 1;
+    position: relative;
+    margin-top: -80px;
+    margin-left: 1140px;
+
+    /* Font Style */
+    color: #B30000;
+    text-align: center;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.MISO1{
+    /* Font Coordinates */
+    z-index: 1;
+    position: relative;
+    margin-left: 10px;
+
+    /* Font Style */
+    color: #ffffff;
+    font-family: 'Mate';
+    font-weight: 400;
+    font-size: 20px;  
+}
+/* circle */
+
+.circlediv{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.circle1{
+
+    background-color:#000000;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.circle2{
+
+    background-color: #282828;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.circle3{
+
+    background-color: #414141;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.circle4{
+
+    background-color:#D9D9D9;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* footer */
+
+.footer{
+    background-color: #414141;
+    display: flex;
+    align-items: center;
+}
+
+.logocontainer{
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 30px;
+}
+
+
+.logo1{
+    padding-top: 15px;
+    height: 99px;
+    width: 263px;
+    padding-bottom: -20px;
+}
+
+.container4{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+
+.image3{
+    width: 45px;
+    height: 45px;
+   margin-left: 20px;
+}
+
+

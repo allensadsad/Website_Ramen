@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+body{
+    margin: auto;
+    height: auto;
+    width: auto;
+    font-family: 'Inter', sans-serif, 'Rock Salt', 'Lora', 'Mate';
+    background: radial-gradient(circle 800px , #393939,#181818,black, black);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.MainPage{
+    width: 100%;
+    height: 120vh;
+}
+
+/* Eto ung para sa pag adjust ng mismong logo */
+.logo{
+    margin-top: 40px;
+    height: 120px;
+    width: 363px;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+
+/* Adjust lahat sa loob ng nav (including logo, list, menubar, etc) */
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+}
+
+/* eto ung pag adjust/edit sa lahat ng list */
+nav ul li{
+    background-color: #2A2A2A;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* class ng ul tas include din dito pag adjust ng li */
+.navList li{
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    font-size: large ;
+    font-family: 'Inter';
+
+}
+
+/* adjust ng ul */
+.navList{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 0;
+}
+
+/* adjust ng li */
+.navItem{
+    list-style: none;
+    margin: 1rem;
+}
+/* adjust ng loob ng li which is ung value niya */
+.navItem a{
+    color: white;
+    text-decoration: none;
+}
+
+/* current item */
+.navItem.current{
+    color: white;
+    cursor: default;
+    background-color: #DF8C00;
+}
+
+.navItem:hover:not(.navItem.current){
+    transform: scale(1.1) translateX(-5px);
+}
+
+.navItem a:hover:not(.navItem.current){
+    color: #DF8C00;
+}
+
+.menu{
+    display:flex;
+    float: right;
+    height: 40px;
+    width: 50px;
+    margin-top: -20px;
+    margin-right: 60px;
+}
+
+.container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+
+}
+
+.box{
+    z-index: -1;
+    position: absolute;
+    margin-top: 50px;
+    background-color: #414141;
+    width: 577px;
+    opacity: 0.6;
+    height: 350px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+}
+
+.bgramen{
+    position: relative;
+    left: 36.5%;
+    width: 395px;
+    height: 610px;
+    opacity: 0.25;
+
+}
+
+.image3{
+    position: relative;
+    padding-right: 60px;
+    width: 35px;
+    height: 35px;
+    margin-left: -40px;
+    margin-bottom: 10px;
+}
+
+.header{
+    /* Text Alignment */
+    text-align: center;
+    margin-top: -29rem;
+    /* Text Modify */
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+.address{
+    /* Text Alignment */
+    text-align: center;
+    margin-left: -1rem;
+    margin-top: 1.5rem;
+    /* Text Modify */
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 15px;
+}
+
+.address1{
+    color: #DF8C00;
+}
+
+.Other{
+    /* Text Alignment */
+    text-align: center;
+    margin-top: 3rem;
+    /* Text Modify */
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 18px;
+}
+
+.Laguna{
+    /* Text Alignment */
+    text-align: center;
+    margin-top: 2rem;
+    /* Text Modify */
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 15px;
+}
+
+.Laguna1{
+    color: #DF8C00;
+}
+
+.NCR{
+    /* Text Alignment */
+    text-align: center;
+    margin-top: 1rem;
+    /* Text Modify */
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 15px;
+}
+
+.NCR1{
+    color: #DF8C00;
+}
